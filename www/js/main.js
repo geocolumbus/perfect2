@@ -1,15 +1,15 @@
 "use strict";
 
 requirejs.config({
-    baseUrl: 'js',
+    baseUrl: '',
     paths: {
-        app: 'app',
-        lib: 'lib'
+        app: 'js/app',
+        lib: 'js/lib'
     }
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'app/sub-object', 'app/sub-function', 'app/sub-class'],
+define(['lib/jquery', 'app/sub-object', 'app/sub-function', 'app/sub-class'],
 
     function($, subObject, subFunction, subClass) {
         console.log('subObject:');

@@ -6,28 +6,29 @@
     "directories": {
         "test": "test"
     },
-    "scripts": {
-        "test": "karma"
-    },
     "keywords": [],
     "author": "George Campbell",
     "license": "ISC",
-
     "dependencies": {
         "requirejs": "^2.3.2",
         "jquery": "^3.1.1",
         "bootstrap": "^3.3.7"
     },
-
     "devDependencies": {
-        "karma": "^1.3.0"
+        "karma": "^1.3.0",
+        "karma-coverage": "^1.1.1",
+        "jasmine-core": "^2.5.2",
+        "karma-jasmine": "^1.0.2",
+        "karma-requirejs": "^1.1.0",
+        "karma-phantomjs-launcher": "^1.0.0",
+        "karma-spec-reporter": "^0.0.26"
     },
-
     "scripts": {
-        "preinstall":"scripts/clean.sh",
+        "preinstall": "scripts/clean.sh",
         "postinstall": "node scripts/copy",
         "clean": "scripts/clean.sh",
-        "cleannode":"scripts/cleannode.sh",
-        "build": "node scripts/build"
+        "cleannode": "scripts/cleannode.sh",
+        "build": "node scripts/build",
+        "test": "./node_modules/karma/bin/karma start karma.conf"
     }
 }

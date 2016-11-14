@@ -1,6 +1,6 @@
 "use strict";
 
-define(['jquery'], function () {
+define(['lib/jquery'], function () {
     return {
         setName: function (name) {
             this._name = name;

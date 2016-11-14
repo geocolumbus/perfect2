@@ -4,7 +4,7 @@ var fs = require('fs'),
         "name": "jquery"
     }, {
         "source": "requirejs/require.js",
-        "name": "requirejs"
+        "name": "require"
     }, {
         "source": "bootstrap/dist/js/bootstrap.min.js",
         "name": "bootstrap"
